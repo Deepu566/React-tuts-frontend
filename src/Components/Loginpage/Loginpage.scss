@@ -1,0 +1,154 @@
+.page {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginwindow {
+        height: 80vh;
+        width: 35%;
+        border: none;
+        border: 1px grey solid;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 40px;
+            gap: 10px;
+
+            h1 {
+                margin-bottom: 0;
+                font-weight: 650;
+            }
+
+            .text {
+                color: grey;
+                font-size: 15px;
+            }
+
+            .option {
+                display: flex;
+                align-items: center;
+
+                .leftline {
+                    width: 50%;
+                    height: 0;
+                    border-bottom: .1px rgb(201, 184, 184) solid;
+                }
+
+                .or {
+                    margin: 0 20px;
+                    color: grey;
+                }
+
+                .rightline {
+                    width: 50%;
+                    height: 0;
+                    border-bottom: .1px rgb(185, 171, 171) solid;
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                font-size: 15px;
+                background-color: white;
+                border: none;
+                border: .1px rgb(209, 205, 205) solid;
+                border-radius: 20px;
+                padding: 5px 10px;
+                cursor: pointer; // color: grey;
+                font-weight: 700;
+                // gap: 10px;
+
+                .googleImage {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+
+        .bottom {
+            color: grey;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 40px 0 40px;
+                gap: 10px;
+
+                .label {
+                    // position: absolute;
+                    font-weight: 500;
+
+                }
+
+                input {
+
+                    width: 94%;
+                    padding: 10px 10px;
+                    border-radius: 10px;
+                    border: .1px grey solid;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+
+                .checkbox {
+                    padding: 0;
+                    // margin: -20px 0 0 0;
+                    // background-color: red;
+                    position: relative;
+
+                    label {
+                        font-weight: 750;
+                    }
+
+                    input {
+                        width: 20px;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 0;
+                        color: blue;
+                        font-weight: 500;
+                    }
+                }
+
+                .login {
+                    background-color: rgb(81, 81, 219);
+                    border: 0;
+                    margin-top: 10px;
+                    padding: 15px 5px;
+                    color: white;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        footer {
+            text-align: center;
+            color: grey;
+            font-weight: 500;
+
+            span {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
